@@ -24,12 +24,12 @@ fi
 tar -xf go${GO_VERSION}.linux-${ARCH}.tar.gz
 mv go $SRCROOT
 chmod 775 $SRCROOT
-chown vagrant:vagrant $SRCROOT
+# chown vagrant:vagrant $SRCROOT
 
 # Setup the GOPATH; 
 # This allows subsequent "go get" commands to work.
 mkdir -p $SRCPATH
-chown -R vagrant:vagrant $SRCPATH 2>/dev/null || true
+# chown -R vagrant:vagrant $SRCPATH 2>/dev/null || true
 # ^^ silencing errors here because we expect this to fail for the shared folder
 
 cat <<EOF >/tmp/gopath.sh
