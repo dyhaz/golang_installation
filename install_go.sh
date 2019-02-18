@@ -40,6 +40,6 @@ EOF
 
 mv /tmp/gopath.sh /etc/profile.d/gopath.sh
 chmod 0755 /etc/profile.d/gopath.sh
-source /etc/profile.d/gopath.sh
+. /etc/profile.d/gopath.sh
 
 cd ${CURDIR}
